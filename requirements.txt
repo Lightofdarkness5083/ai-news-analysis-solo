@@ -1,4 +1,4 @@
-matplolib
+matplotlib
 pandas
 requests
 python-dotenv
