@@ -12,10 +12,10 @@ def fetch_naver_news(query: str, display: int = 100) -> dict:
     """
     네이버 뉴스 검색 API를 실제로 호출하는 함수.
     """
-    url = "https://openapi.naver.com/v1/search/news.json"
+    url = "https://naverapihub.apigw.ntruss.com/search/v1/news"
     headers = {
-        "X-Naver-Client-Id": NAVER_CLIENT_ID,
-        "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
+        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET,
     }
     params = {
         "query": query,
